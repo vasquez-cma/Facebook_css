@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+.main{
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.recent-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding-right: 35px;
+}
+h2{
+    font-size: 4rem;
+    color: #1877f2;
+    letter-spacing: -2px;
+}
+h3{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.recent-login__description--profile{
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight:500;
+    color: gray;
+}
+.login__container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.recent-login__users{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.recent-login__users:hover{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+    transition: box-shadow .3s;
+    
+}
+.recent-login__usersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.recent-login__usersContainer--image{
+    width: 200px;
+    
+}
+.recent-login__usersContainer--name{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.8rem;
+    color: rgb(68, 68, 68);
+    margin-bottom: 8px;
+}
+.recent-login__users span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://iili.io/KSMb2a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    
+    
+}
+.recent-login__usersContainer--add{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.8rem;
+    color: #1877f2;
+    margin-bottom: 8px;
+}
+/* Login */
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    padding-right: 35px;
+}
+.login__Container{
+    padding: 0;
+    height: 320px;
+    width: 380px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    background-color: white;
+}
+form{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+form input{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 10px;
+    outline-color: #1877f2;
+
+}
+::placeholder{
+    font-size: 1.4rem;
+    color: rgb(122, 122, 122);
+}
+.form__login{
+    width: 90%;
+    height: 45px;
+    margin: 0 auto;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+    background-color: #1877f2;
+    
+}
+.form__login:hover{
+    background-color: #186edf;
+}
+.form__restore{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #1877f2;
+    text-decoration: none;
+}
+.form__restore:hover{
+    text-decoration: underline;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid rgb(231, 231, 231);
+    margin-bottom: 20px;
+}
+.form__register{
+    width: 45%;
+    margin: 0 auto;
+    height: 50px;
+    background-color: #42b72a;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.form__register:hover{
+    background-color: #3daa27;
+}
+.login__Container--text{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
